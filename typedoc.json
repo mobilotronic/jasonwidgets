@@ -1,0 +1,12 @@
+{
+  "categorizeByGroup": false,
+  "theme": "./node_modules/typedoc-neo-theme/bin/default",
+  "name": "Simple binding framework",
+  "disableSources": true,
+  "hideGenerator": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "entryPoints": [
+    "src/index.ts"
+  ]
+}

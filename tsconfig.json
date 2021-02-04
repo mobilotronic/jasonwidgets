@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "target": "es6",
+    "lib": ["dom","es6"],
+    "sourceMap": true,
+    "watch": false,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "alwaysStrict": false,
+    "experimentalDecorators": false,
+    "charset": "UTF8",
+    "noImplicitUseStrict": true,
+    "noEmitHelpers": false
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build/production"
+  ]
+}

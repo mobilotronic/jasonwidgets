@@ -1,0 +1,43 @@
+{
+  "name": "@mobilotronic/jasonwidgets",
+  "version": "1.0.6",
+  "description": "The free UI framework to build HTML/JavaScript applications",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobilotronic/jasonwidgets.git"
+  },
+  "keywords": [
+    "ui",
+    "framework",
+    "javascript",
+    "html"
+  ],
+  "author": "mobilotronic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobilotronic/jasonwidgets/issues"
+  },
+  "homepage": "https://github.com/mobilotronic/jasonwidgets#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.22",
+    "chai": "^4.2.0",
+    "fs-extra": "^9.1.0",
+    "gulp": "^4.0.2",
+    "gulp-bump": "^3.2.0",
+    "gulp-typescript": "^5.0.1",
+    "jsdom": "^16.4.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.17",
+    "typedoc-neo-theme": "^1.1.0",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "build": "gulp -b --color --gulpfile gulpfile.js buildProduction",
+    "publishToVerdaccio": "npm run test && typedoc && gulp -b --color --gulpfile gulpfile.js publishToVerdaccio",
+    "compileTS": "gulp -b --color --gulpfile gulpfile.js compileTS",
+    "test": "mocha -r ts-node/register --no-timeouts --colors tests/**/*.ts"
+  }
+}
